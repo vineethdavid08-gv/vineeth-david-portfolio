@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Vineeth David — Creative Portfolio</title><meta content="Creative video portfolio showcasing social media and brand content created for company campaigns." name="description"/><style>
+:root{--bg:#ffffff;--panel:#fff;--line:#d9d9de;--text:#1d1d1f;--muted:#6e6e73;--accent:#7a1f2b;--dark:#000}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{max-width:1240px;margin:auto;padding:0 28px}.nav{height:54px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,.08);position:sticky;top:0;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(20px);z-index:20}.brand{font-weight:900;letter-spacing:-.04em;font-size:22px}.brand span{color:var(--accent)}nav{display:flex;gap:28px;color:#424245;font-size:13px}nav a:hover{color:var(--accent)}.hero{min-height:78vh;display:flex;align-items:center;padding:90px 0 110px;text-align:center;justify-content:center}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(56px,9.5vw,128px);line-height:.9;letter-spacing:-.075em;max-width:1100px;margin:22px auto}.hero p{max-width:650px;color:var(--muted);font-size:19px;line-height:1.55;margin-left:auto;margin-right:auto}.buttons{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{padding:13px 20px;border:1px solid #d2d2d7;border-radius:999px;font-weight:600;font-size:14px;background:#fff}.btn.primary{background:#7a1f2b;color:#fff;border-color:#7a1f2b}.section{padding:110px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.section h2{font-size:52px;letter-spacing:-.055em;margin:0}.sectionhead p{color:var(--muted);margin:0;max-width:470px;line-height:1.55}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:var(--panel);border:1px solid rgba(0,0,0,.08);border-radius:24px;overflow:hidden;transition:.35s transform,.35s box-shadow,.35s border-color;box-shadow:0 2px 10px rgba(0,0,0,.04)}.card:hover{transform:translateY(-6px);border-color:rgba(0,0,0,.15);box-shadow:0 18px 40px rgba(0,0,0,.09)}.thumb{aspect-ratio:9/12;background:linear-gradient(145deg,#e8e8ed,#bcbcc2);position:relative;display:flex;align-items:center;justify-content:center}.num{position:absolute;top:16px;left:16px;font-size:12px;color:#6e6e73;font-weight:700}.ig{position:absolute;top:16px;right:16px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#6e6e73}.play{width:64px;height:64px;border:1px solid rgba(0,0,0,.15);border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(0,0,0,.72);font-size:18px;padding-left:3px;box-shadow:0 10px 25px rgba(0,0,0,.18)}.cardbody{padding:17px;display:flex;justify-content:space-between;align-items:end;gap:15px}.eyebrow{font-size:10px;color:#6e6e73;letter-spacing:.14em}.card h3{font-size:18px;margin:6px 0 0;letter-spacing:-.02em}.view{font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap}.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}.aboutbox{border-top:1px solid var(--line);padding-top:22px}.aboutbox h3{font-size:22px;margin:0 0 10px}.aboutbox p{color:#6e6e73;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:45px}.stat{background:var(--bg);padding:30px}.stat strong{font-size:40px;letter-spacing:-.05em}.stat span{display:block;color:#6e6e73;font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-top:7px}.contact{padding:130px 0 150px;text-align:center}.contact h2{font-size:clamp(44px,7vw,82px);letter-spacing:-.07em;margin:0 auto 25px;max-width:850px}.contact p{color:#6e6e73;margin:auto auto 30px}.footer{border-top:1px solid var(--line);padding:25px 0;color:#6e6e73;font-size:12px;display:flex;justify-content:space-between}@media(max-width:800px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.hero{min-height:auto;padding:70px 0}.stats{grid-template-columns:1fr}.wrap{padding:0 18px}}@media(max-width:520px){.grid{grid-template-columns:1fr}.section h2{font-size:34px}.sectionhead{display:block}.sectionhead p{margin-top:12px}}
+
+.reel-trigger{width:100%;border:0;color:inherit;text-align:left;cursor:pointer;font:inherit}.thumb{overflow:hidden}.thumb:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(216,255,62,.08),transparent 42%,rgba(255,255,255,.03));}.preview-label{position:absolute;bottom:16px;left:16px;font-size:10px;letter-spacing:.16em;color:#6e6e73;font-weight:800}.reel-trigger:hover .play{transform:scale(1.08);background:var(--accent);color:#fff;border-color:var(--accent)}.play{transition:.2s}.modal{position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:50;display:none;align-items:center;justify-content:center;padding:24px}.modal.open{display:flex}.modalbox{width:min(430px,100%);background:#101010;border:1px solid #333;border-radius:20px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.55)}.modalhead{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #282828}.modalhead strong{font-size:13px}.close{width:40px;height:40px;border-radius:50%;border:1px solid #333;background:#171717;color:#fff;font-size:20px;cursor:pointer}.player{aspect-ratio:9/16;background:#050505}.player iframe{width:100%;height:100%;border:0}.modalfoot{padding:13px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center}.modalfoot span{color:#6e6e73;font-size:11px}.modalfoot a{font-size:12px;color:var(--accent);font-weight:800}@media(max-width:520px){.modal{padding:10px}.modalbox{width:100%}}
+
+.story{background:#4f111c;color:#fff;border-radius:32px;padding:110px 30px;margin:30px 0 30px}.story-inner{max-width:920px;margin:auto;text-align:center}.story-kicker{font-size:11px;letter-spacing:.16em;font-weight:700;color:#a1a1a6}.story h2{font-size:clamp(54px,8vw,100px);line-height:.92;letter-spacing:-.065em;margin:22px 0}.story h2 em{font-style:normal;color:#8f8f94}.story p{max-width:620px;margin:0 auto;color:#a1a1a6;font-size:20px;line-height:1.5}.story-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#6e2633;margin:65px auto 0;border:1px solid #2b2b2f;border-radius:20px;overflow:hidden;text-align:left}.story-metrics>div{background:#4f111c;padding:25px}.story-metrics strong{display:block;font-size:34px;letter-spacing:-.05em}.story-metrics span{display:block;color:#8f8f94;font-size:12px;margin-top:7px}.views{display:block;margin-top:8px;font-size:12px;color:#6e6e73;font-weight:600}.view{align-self:center;color:var(--accent)}
+@media(max-width:700px){.story{padding:75px 20px;border-radius:24px}.story-metrics{grid-template-columns:1fr}.story h2{font-size:54px}}
+
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.video-card{background:#fff;border:1px solid #dedee3;border-radius:26px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.05);transition:transform .35s,box-shadow .35s}
+.video-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.10)}
+.video-frame{position:relative;aspect-ratio:9/12;background:#111;overflow:hidden}
+.video-frame iframe{width:100%;height:100%;border:0;display:block}
+.frame-label{position:absolute;top:14px;left:14px;z-index:2;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);padding:7px 10px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.12em;color:#555;text-transform:uppercase;pointer-events:none}
+.view-pill{display:none}
+.video-meta{padding:18px 18px 20px;display:flex;justify-content:space-between;gap:16px;align-items:end}.video-meta h3{margin:5px 0 0;font-size:17px;letter-spacing:-.02em}.video-meta small{color:#777;line-height:1.4}.open-reel{color:#7a1f2b;font-weight:700;font-size:12px;white-space:nowrap}.metric-note{margin-top:8px;font-size:11px;color:#8a8a8f}
+@media(max-width:900px){.video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.video-grid{grid-template-columns:1fr}.video-frame{aspect-ratio:9/14}}
+.instagram-media{margin:0!important;width:100%!important;min-width:0!important;border:0!important;background:#111!important}.video-frame{display:flex;align-items:center;justify-content:center}.video-frame .instagram-media{height:100%;overflow:hidden}.video-frame .instagram-media>div{max-width:100%!important}
+.mobile-open{display:none;position:absolute;left:12px;right:12px;bottom:12px;z-index:5;background:rgba(79,17,28,.95);color:#fff;padding:11px 14px;border-radius:999px;text-align:center;font-size:12px;font-weight:800}.video-frame:has(.instagram-media) .mobile-open{display:block}.video-frame .instagram-media a{color:#fff}
+@media(max-width:560px){.video-frame{aspect-ratio:9/14}.video-frame .instagram-media{height:100%;display:flex;align-items:center;justify-content:center}.view-pill{display:none}.mobile-open{display:block}}
+
+.view-outside{margin-top:9px;font-size:24px;font-weight:950;letter-spacing:-.04em;color:#4f111c}.video-meta{align-items:center}.video-meta>div:first-child{min-width:0}.open-reel{margin-left:auto}
+</style><script async="" src="https://www.instagram.com/embed.js"></script></head><body><div class="wrap"><header class="nav"><a class="brand" href="#top">VINEETH DAVID</a><nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header><main id="top"><section class="hero"><div><div class="kicker">Creative Portfolio · Social Content</div><h1>Ideas that move.<br/><span style="color:#aaa">Stories that stay.</span></h1><p>A curated showcase of short-form video content created for company communication, brand storytelling and social media.</p><div class="buttons"><a class="btn primary" href="#work">Explore the work ↓</a><a class="btn" href="#contact">Let's connect</a></div></div></section><section aria-label="Creative impact" class="story"><div class="story-inner"><div class="story-kicker">THE WORK, IN MOTION</div><h2>Not just content.<br/><em>Communication.</em></h2><p>Short-form video built to stop the scroll, carry a message and make a brand feel human.</p><div class="story-metrics"><div><strong>59</strong><span>Reels in archive</span></div><div><strong>59</strong><span>Published reels</span></div><div><strong>01</strong><span>Creative archive</span></div></div></div></section><section class="section" id="work"><div class="sectionhead"><div><div class="kicker">MY CONTENT</div><h2>Selected Work</h2></div><p>My published short-form video work — shown directly on the portfolio. Each piece can be watched here or opened as the original Instagram Reel.</p></div><div class="video-grid"><article class="video-card" data-views="73800">
+  <div class="video-frame">
+    <span class="frame-label">REEL 01</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNWwicVzWoS/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DNWwicVzWoS/" rel="noopener" target="_blank">View Reel 1 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #1</small>
+      <h3>Content Project 01</h3>
+      <div class="view-outside">73.8K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DNWwicVzWoS/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="40300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 02</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQ29aLgE_9M/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DQ29aLgE_9M/" rel="noopener" target="_blank">View Reel 2 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #2</small>
+      <h3>Content Project 02</h3>
+      <div class="view-outside">40.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DQ29aLgE_9M/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="35000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 03</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBSgObuM1N5/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBSgObuM1N5/" rel="noopener" target="_blank">View Reel 3 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #3</small>
+      <h3>Content Project 03</h3>
+      <div class="view-outside">35K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBSgObuM1N5/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="31000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 04</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBP5S_lsD8t/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBP5S_lsD8t/" rel="noopener" target="_blank">View Reel 4 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #4</small>
+      <h3>Content Project 04</h3>
+      <div class="view-outside">31K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBP5S_lsD8t/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="30000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 05</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEoKL_nzpiT/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DEoKL_nzpiT/" rel="noopener" target="_blank">View Reel 5 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #5</small>
+      <h3>Content Project 05</h3>
+      <div class="view-outside">30K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DEoKL_nzpiT/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="28400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 06</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBkdpE3uTDw/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBkdpE3uTDw/" rel="noopener" target="_blank">View Reel 6 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #6</small>
+      <h3>Content Project 06</h3>
+      <div class="view-outside">28.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBkdpE3uTDw/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="28300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 07</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHCqHUbz3Bp/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DHCqHUbz3Bp/" rel="noopener" target="_blank">View Reel 7 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #7</small>
+      <h3>Content Project 07</h3>
+      <div class="view-outside">28.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DHCqHUbz3Bp/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="28300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 08</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBfWoKOieQE/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBfWoKOieQE/" rel="noopener" target="_blank">View Reel 8 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #8</small>
+      <h3>Content Project 08</h3>
+      <div class="view-outside">28.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBfWoKOieQE/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="27900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 09</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DJ31x5CTUDt/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DJ31x5CTUDt/" rel="noopener" target="_blank">View Reel 9 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #9</small>
+      <h3>Content Project 09</h3>
+      <div class="view-outside">27.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DJ31x5CTUDt/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="27500">
+  <div class="video-frame">
+    <span class="frame-label">REEL 10</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOhkI6QE3UH/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DOhkI6QE3UH/" rel="noopener" target="_blank">View Reel 10 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #10</small>
+      <h3>Content Project 10</h3>
+      <div class="view-outside">27.5K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DOhkI6QE3UH/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="27000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 11</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBaOXYbMVbT/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBaOXYbMVbT/" rel="noopener" target="_blank">View Reel 11 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #11</small>
+      <h3>Content Project 11</h3>
+      <div class="view-outside">27K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBaOXYbMVbT/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 12</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DCgmnPMzZP3/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DCgmnPMzZP3/" rel="noopener" target="_blank">View Reel 12 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #12</small>
+      <h3>Content Project 12</h3>
+      <div class="view-outside">26.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DCgmnPMzZP3/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26500">
+  <div class="video-frame">
+    <span class="frame-label">REEL 13</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFyrGl3zaIh/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DFyrGl3zaIh/" rel="noopener" target="_blank">View Reel 13 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #13</small>
+      <h3>Content Project 13</h3>
+      <div class="view-outside">26.5K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DFyrGl3zaIh/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 14</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DE80Ts3TS0e/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DE80Ts3TS0e/" rel="noopener" target="_blank">View Reel 14 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #14</small>
+      <h3>Content Project 14</h3>
+      <div class="view-outside">26.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DE80Ts3TS0e/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26100">
+  <div class="video-frame">
+    <span class="frame-label">REEL 15</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DGKACwoze-W/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DGKACwoze-W/" rel="noopener" target="_blank">View Reel 15 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #15</small>
+      <h3>Content Project 15</h3>
+      <div class="view-outside">26.1K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DGKACwoze-W/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 16</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEWNAtiz0h3/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DEWNAtiz0h3/" rel="noopener" target="_blank">View Reel 16 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #16</small>
+      <h3>Content Project 16</h3>
+      <div class="view-outside">26K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DEWNAtiz0h3/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 17</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DDDjUrEz8nc/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DDDjUrEz8nc/" rel="noopener" target="_blank">View Reel 17 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #17</small>
+      <h3>Content Project 17</h3>
+      <div class="view-outside">26K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DDDjUrEz8nc/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="26000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 18</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DCxtNRvzurb/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DCxtNRvzurb/" rel="noopener" target="_blank">View Reel 18 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #18</small>
+      <h3>Content Project 18</h3>
+      <div class="view-outside">26K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DCxtNRvzurb/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="25900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 19</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DH94rcvz5q6/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DH94rcvz5q6/" rel="noopener" target="_blank">View Reel 19 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #19</small>
+      <h3>Content Project 19</h3>
+      <div class="view-outside">25.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DH94rcvz5q6/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="25800">
+  <div class="video-frame">
+    <span class="frame-label">REEL 20</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFgxGWJTmhN/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DFgxGWJTmhN/" rel="noopener" target="_blank">View Reel 20 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #20</small>
+      <h3>Content Project 20</h3>
+      <div class="view-outside">25.8K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DFgxGWJTmhN/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="25700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 21</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DGb5jx1zj1n/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DGb5jx1zj1n/" rel="noopener" target="_blank">View Reel 21 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #21</small>
+      <h3>Content Project 21</h3>
+      <div class="view-outside">25.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DGb5jx1zj1n/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="22700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 22</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C8GMXT2SQDg/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/C8GMXT2SQDg/" rel="noopener" target="_blank">View Reel 22 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #22</small>
+      <h3>Content Project 22</h3>
+      <div class="view-outside">22.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/C8GMXT2SQDg/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="20700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 23</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNDO5OxTUaZ/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DNDO5OxTUaZ/" rel="noopener" target="_blank">View Reel 23 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #23</small>
+      <h3>Content Project 23</h3>
+      <div class="view-outside">20.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DNDO5OxTUaZ/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="20600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 24</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNIYbU6T39K/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DNIYbU6T39K/" rel="noopener" target="_blank">View Reel 24 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #24</small>
+      <h3>Content Project 24</h3>
+      <div class="view-outside">20.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DNIYbU6T39K/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="20300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 25</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMxNRGUzpjw/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMxNRGUzpjw/" rel="noopener" target="_blank">View Reel 25 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #25</small>
+      <h3>Content Project 25</h3>
+      <div class="view-outside">20.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMxNRGUzpjw/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="20000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 26</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHAYMlYz31w/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DHAYMlYz31w/" rel="noopener" target="_blank">View Reel 26 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #26</small>
+      <h3>Content Project 26</h3>
+      <div class="view-outside">20K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DHAYMlYz31w/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="19700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 27</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOQvzZmE_zI/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DOQvzZmE_zI/" rel="noopener" target="_blank">View Reel 27 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #27</small>
+      <h3>Content Project 27</h3>
+      <div class="view-outside">19.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DOQvzZmE_zI/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="19600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 28</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHkF_HizfDt/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DHkF_HizfDt/" rel="noopener" target="_blank">View Reel 28 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #28</small>
+      <h3>Content Project 28</h3>
+      <div class="view-outside">19.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DHkF_HizfDt/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="19400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 29</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C8A9BFeyVjQ/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/C8A9BFeyVjQ/" rel="noopener" target="_blank">View Reel 29 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #29</small>
+      <h3>Content Project 29</h3>
+      <div class="view-outside">19.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/C8A9BFeyVjQ/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="17900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 30</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOFMkeME_61/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DOFMkeME_61/" rel="noopener" target="_blank">View Reel 30 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #30</small>
+      <h3>Content Project 30</h3>
+      <div class="view-outside">17.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DOFMkeME_61/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="17800">
+  <div class="video-frame">
+    <span class="frame-label">REEL 31</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQ9OCp6iIc7/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DQ9OCp6iIc7/" rel="noopener" target="_blank">View Reel 31 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #31</small>
+      <h3>Content Project 31</h3>
+      <div class="view-outside">17.8K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DQ9OCp6iIc7/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="17500">
+  <div class="video-frame">
+    <span class="frame-label">REEL 32</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DN6-l56k53b/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DN6-l56k53b/" rel="noopener" target="_blank">View Reel 32 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #32</small>
+      <h3>Content Project 32</h3>
+      <div class="view-outside">17.5K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DN6-l56k53b/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="16400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 33</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBDCkRNsbNd/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DBDCkRNsbNd/" rel="noopener" target="_blank">View Reel 33 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #33</small>
+      <h3>Content Project 33</h3>
+      <div class="view-outside">16.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DBDCkRNsbNd/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="16100">
+  <div class="video-frame">
+    <span class="frame-label">REEL 34</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNee_gWz9sl/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DNee_gWz9sl/" rel="noopener" target="_blank">View Reel 34 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #34</small>
+      <h3>Content Project 34</h3>
+      <div class="view-outside">16.1K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DNee_gWz9sl/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="14900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 35</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPaXh26E3wJ/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DPaXh26E3wJ/" rel="noopener" target="_blank">View Reel 35 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #35</small>
+      <h3>Content Project 35</h3>
+      <div class="view-outside">14.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DPaXh26E3wJ/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="14100">
+  <div class="video-frame">
+    <span class="frame-label">REEL 36</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOr5xawk9yN/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DOr5xawk9yN/" rel="noopener" target="_blank">View Reel 36 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #36</small>
+      <h3>Content Project 36</h3>
+      <div class="view-outside">14.1K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DOr5xawk9yN/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="13600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 37</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNkwonwzOBe/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DNkwonwzOBe/" rel="noopener" target="_blank">View Reel 37 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #37</small>
+      <h3>Content Project 37</h3>
+      <div class="view-outside">13.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DNkwonwzOBe/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="13400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 38</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DO4wjqzERq2/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DO4wjqzERq2/" rel="noopener" target="_blank">View Reel 38 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #38</small>
+      <h3>Content Project 38</h3>
+      <div class="view-outside">13.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DO4wjqzERq2/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="12400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 39</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPNvOhDDoHQ/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DPNvOhDDoHQ/" rel="noopener" target="_blank">View Reel 39 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #39</small>
+      <h3>Content Project 39</h3>
+      <div class="view-outside">12.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DPNvOhDDoHQ/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="12300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 40</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DM1g6ysTTfL/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DM1g6ysTTfL/" rel="noopener" target="_blank">View Reel 40 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #40</small>
+      <h3>Content Project 40</h3>
+      <div class="view-outside">12.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DM1g6ysTTfL/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="11700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 41</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DP5Lq-_Eyfk/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DP5Lq-_Eyfk/" rel="noopener" target="_blank">View Reel 41 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #41</small>
+      <h3>Content Project 41</h3>
+      <div class="view-outside">11.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DP5Lq-_Eyfk/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="11600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 42</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DM-FPbGTNVE/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DM-FPbGTNVE/" rel="noopener" target="_blank">View Reel 42 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #42</small>
+      <h3>Content Project 42</h3>
+      <div class="view-outside">11.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DM-FPbGTNVE/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="11400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 43</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOXTtrck0t_/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DOXTtrck0t_/" rel="noopener" target="_blank">View Reel 43 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #43</small>
+      <h3>Content Project 43</h3>
+      <div class="view-outside">11.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DOXTtrck0t_/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="10800">
+  <div class="video-frame">
+    <span class="frame-label">REEL 44</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYEO9pUzUP1/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DYEO9pUzUP1/" rel="noopener" target="_blank">View Reel 44 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #44</small>
+      <h3>Content Project 44</h3>
+      <div class="view-outside">10.8K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DYEO9pUzUP1/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="10100">
+  <div class="video-frame">
+    <span class="frame-label">REEL 45</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMIORAqT3Df/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMIORAqT3Df/" rel="noopener" target="_blank">View Reel 45 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #45</small>
+      <h3>Content Project 45</h3>
+      <div class="view-outside">10.1K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMIORAqT3Df/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="10000">
+  <div class="video-frame">
+    <span class="frame-label">REEL 46</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPh_0cVE9Qp/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DPh_0cVE9Qp/" rel="noopener" target="_blank">View Reel 46 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #46</small>
+      <h3>Content Project 46</h3>
+      <div class="view-outside">10K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DPh_0cVE9Qp/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="9300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 47</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DVUvXE-E48y/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DVUvXE-E48y/" rel="noopener" target="_blank">View Reel 47 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #47</small>
+      <h3>Content Project 47</h3>
+      <div class="view-outside">9.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DVUvXE-E48y/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="9200">
+  <div class="video-frame">
+    <span class="frame-label">REEL 48</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DRN1PLfk4bD/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DRN1PLfk4bD/" rel="noopener" target="_blank">View Reel 48 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #48</small>
+      <h3>Content Project 48</h3>
+      <div class="view-outside">9.2K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DRN1PLfk4bD/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="9100">
+  <div class="video-frame">
+    <span class="frame-label">REEL 49</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DL6OT-Kzgqb/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DL6OT-Kzgqb/" rel="noopener" target="_blank">View Reel 49 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #49</small>
+      <h3>Content Project 49</h3>
+      <div class="view-outside">9.1K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DL6OT-Kzgqb/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="8600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 50</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DWXq_Ipk_is/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DWXq_Ipk_is/" rel="noopener" target="_blank">View Reel 50 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #50</small>
+      <h3>Content Project 50</h3>
+      <div class="view-outside">8.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DWXq_Ipk_is/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="8300">
+  <div class="video-frame">
+    <span class="frame-label">REEL 51</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMTz2bDzwQw/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMTz2bDzwQw/" rel="noopener" target="_blank">View Reel 51 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #51</small>
+      <h3>Content Project 51</h3>
+      <div class="view-outside">8.3K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMTz2bDzwQw/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="8200">
+  <div class="video-frame">
+    <span class="frame-label">REEL 52</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMtjzGFTtAP/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMtjzGFTtAP/" rel="noopener" target="_blank">View Reel 52 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #52</small>
+      <h3>Content Project 52</h3>
+      <div class="view-outside">8.2K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMtjzGFTtAP/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="7900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 53</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DWxfBz3DApi/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DWxfBz3DApi/" rel="noopener" target="_blank">View Reel 53 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #53</small>
+      <h3>Content Project 53</h3>
+      <div class="view-outside">7.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DWxfBz3DApi/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="7700">
+  <div class="video-frame">
+    <span class="frame-label">REEL 54</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYLVt3qT9yv/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DYLVt3qT9yv/" rel="noopener" target="_blank">View Reel 54 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #54</small>
+      <h3>Content Project 54</h3>
+      <div class="view-outside">7.7K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DYLVt3qT9yv/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="7600">
+  <div class="video-frame">
+    <span class="frame-label">REEL 55</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMmCAsrTqQH/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMmCAsrTqQH/" rel="noopener" target="_blank">View Reel 55 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #55</small>
+      <h3>Content Project 55</h3>
+      <div class="view-outside">7.6K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMmCAsrTqQH/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="7400">
+  <div class="video-frame">
+    <span class="frame-label">REEL 56</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DL97I6_z5Lj/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DL97I6_z5Lj/" rel="noopener" target="_blank">View Reel 56 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #56</small>
+      <h3>Content Project 56</h3>
+      <div class="view-outside">7.4K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DL97I6_z5Lj/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="7200">
+  <div class="video-frame">
+    <span class="frame-label">REEL 57</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DVj7gwgE9VJ/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DVj7gwgE9VJ/" rel="noopener" target="_blank">View Reel 57 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #57</small>
+      <h3>Content Project 57</h3>
+      <div class="view-outside">7.2K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DVj7gwgE9VJ/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="6900">
+  <div class="video-frame">
+    <span class="frame-label">REEL 58</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMaCGQBz2oO/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMaCGQBz2oO/" rel="noopener" target="_blank">View Reel 58 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #58</small>
+      <h3>Content Project 58</h3>
+      <div class="view-outside">6.9K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMaCGQBz2oO/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article><article class="video-card" data-views="6800">
+  <div class="video-frame">
+    <span class="frame-label">REEL 59</span>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMfLugzT30I/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DMfLugzT30I/" rel="noopener" target="_blank">View Reel 59 on Instagram ↗</a>
+    </blockquote>
+    <span class="mobile-open">Open Reel on Instagram ↗</span>
+  </div>
+  <div class="video-meta">
+    <div>
+      <small>Instagram Reel · Ranked #59</small>
+      <h3>Content Project 59</h3>
+      <div class="view-outside">6.8K views</div>
+    </div>
+    <a class="open-reel" href="https://www.instagram.com/reel/DMfLugzT30I/" rel="noopener" target="_blank">Original ↗</a>
+  </div>
+</article></div></section></main></div><div class="video-meta"><div><small>Instagram Reel · Project 02</small><h3>Content Project 02</h3></div><a class="open-reel" href="https://www.instagram.com/reel/DYEO9pUzUP1/" rel="noopener" target="_blank">Original ↗</a></div><section class="section" id="about"><div class="sectionhead"><h2>What I create</h2><p>Short-form content designed to communicate quickly, feel human and make the brand memorable.</p></div><div class="about"><div class="aboutbox"><h3>Video &amp; Social</h3><p>Reels, campaign edits, event coverage, promotional videos and social-first storytelling.</p></div><div class="aboutbox"><h3>Creative Direction</h3><p>Concept development, visual storytelling, editing direction and content built around audience attention.</p></div></div><div class="stats"><div class="stat"><strong>54</strong><span>Reels showcased</span></div><div class="stat"><strong>01</strong><span>Creative archive</span></div><div class="stat"><strong>∞</strong><span>Ideas to create</span></div></div></section><section class="contact" id="contact"><div class="kicker">Have a project?</div><h2>Let's make something people remember.</h2><p>Available for creative content, social media video and brand storytelling projects.</p><a class="btn primary" href="https://www.instagram.com/" rel="noopener" target="_blank">Instagram ↗</a></section><footer class="footer"><span>© 2026 Vineeth David</span><span>Built around the work.</span></footer><script>document.querySelectorAll('.video-frame').forEach(function(frame){var b=frame.querySelector('.instagram-media');var a=frame.querySelector('.mobile-open');if(b&&a){a.href=b.getAttribute('data-instgrm-permalink')}});</script></body></html>
